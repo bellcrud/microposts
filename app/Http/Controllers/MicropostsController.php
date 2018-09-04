@@ -32,7 +32,7 @@ class MicropostsController extends Controller
     }
     
     public function store(Request $request){
-        $this->valdate($request, [
+        $this->validate($request, [
             'content' => 'required|max:191',
             ]);
         
